@@ -3,7 +3,7 @@ description: 'Hace un Saludo desde el contenedor'
 inputs:
   quien:
     description: 'Para quién es el Saludo'
-    requered: true
+    required: true
     default: 'Todos'
 outputs:
   hora:
