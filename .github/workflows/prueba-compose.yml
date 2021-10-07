@@ -2,12 +2,12 @@ name: 'Flujo con docker-compose'
 on: push
 jobs:
   probar:
-   runs-on: ubuntu-latest
-   steps:
-     - uses: actions/checkout@v2
-     - name: 'Iniciar docker-compose'
-       run: docker-compose -f docker_compose.yml up
-     - name: 'Listar los contenedores en ejecución'
-       run: docker ps -a
-     - name: 'Mostrar la bitacora de inicio'
-       run: docker logs basedatos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 'Iniciar docker-compose'
+        run: docker-compose -f docker_compose.yml up
+      - name: 'Listar los contenedores en ejecución'
+        run: docker ps -a
+      - name: 'Mostrar la bitacora de inicio'
+        run: docker logs basedatos
