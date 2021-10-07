@@ -1,7 +1,7 @@
 version: "3"
 services:
   basedatos:
-    images: postgres
+    image: postgres
     container_name: basedatos
     restart: always
     enviroment:
