@@ -4,7 +4,7 @@ services:
     image: postgres
     container_name: basedatos
     restart: always
-    enviroment:
+    environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
     ports:
@@ -13,7 +13,7 @@ services:
        - pgdata:/var/lib/postgresql/data
   admin:
     image: dpage/pgadmin4:4.23
-    enviroment:
+    environment:
        PGADMIN_DEFAULT_EMAIL: admin@pgadmin.com
        PGADMIN_DEFAULT_PASSWORD: password
        PGADMIN_LISTEN_PORT: 80
