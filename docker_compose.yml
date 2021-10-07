@@ -7,10 +7,10 @@ services:
     enviroment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
-     ports:
+    ports:
       - 5342:5342
-     volumes:
-       - pgdata:/var/lib/postgresql/data
+    volumes:
+        - pgdata:/var/lib/postgresql/data
   admin:
     image: dpage/pgadmin4:4.23
     enviroment:
