@@ -6,8 +6,8 @@ inputs:
     required: true
     default: 'Todos'
 outputs:
-  hora:
-    description: 'la hora del saludito'
+ hora:
+   description: 'la hora del saludito'
 runs:
   using: 'Docker'
   image: 'Dockerfile'
