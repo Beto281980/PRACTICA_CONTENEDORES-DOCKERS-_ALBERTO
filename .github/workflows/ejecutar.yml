@@ -7,7 +7,7 @@ jobs:
     steps:
      - name: 'Ejecutar la acción del Docker'
        id: hola
-       uses: Beto281980/PRACTICA_CONTENEDORES-DOCKERS-_ALBERTO@v1
+       uses: Beto281980/PRACTICA_CONTENEDORES-DOCKERS-_ALBERTO/action@master
        with:
          quien: 'Beto'
      - name: 'Mostrar la hora obtenida'
